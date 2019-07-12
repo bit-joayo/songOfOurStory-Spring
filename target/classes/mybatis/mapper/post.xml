@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="post">
+	<insert id="insert" parameterType="postVo">
+	<![CDATA[
+	insert into story(storycontent, regdate, userid, title) 
+	values(#{postContent}, now(), #{userId},#{title});
+	]]>
+	</insert>
+
+	<select id="selectAllPost" resultType="postVo">
+	<![CDATA[
+		select postNo, postContent, regDate, userId, songId1, songId2, songId3, title
+		from story
+	]]>
+	</select>
+	
+	<select id="selectPostByPostNo" parameterType="long" resultType="postVo">
+	<![CDATA[
+		select  postNo, postContent, regDate, userId, songId1, songId2, songId3, title
+		from story
+		WHERE postNo = #{value} 
+	]]>
+	</select>
+
+	
+	
+</mapper>

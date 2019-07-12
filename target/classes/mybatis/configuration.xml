@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 객체 별칭 지정 -->
+	<typeAliases>
+		<typeAlias alias="userVo" type="com.Bamboo.vo.UserVo" />
+		<typeAlias alias="postVo" type="com.Bamboo.vo.PostVo" />
+		<typeAlias alias="songVo" type="com.Bamboo.vo.SongVo" />
+		
+	</typeAliases>
+	<mappers>
+		
+		<mapper resource="mybatis/mapper/post.xml" />
+		<mapper resource="mybatis/mapper/song.xml" />
+		<mapper resource="mybatis/mapper/users.xml" />
+	</mappers>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</configuration>
