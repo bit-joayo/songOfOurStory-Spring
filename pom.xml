@@ -28,7 +28,7 @@
 
 	<!-- Properties -->
 	<properties>
-		<org.springframework-version>4.2.3.RELEASE</org.springframework-version>
+		<org.springframework-version>4.2.7.RELEASE</org.springframework-version>
 		<jcloverslf4j-version>1.7.7</jcloverslf4j-version>
 		<logback-version>1.2.3</logback-version>
 
